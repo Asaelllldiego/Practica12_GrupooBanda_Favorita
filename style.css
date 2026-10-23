@@ -1,0 +1,322 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edeff2;
+    color: #26364a;
+    line-height: 1.7;
+}
+
+
+
+header {
+    background: linear-gradient(
+        135deg,
+        #26364a,
+        #344a65,
+        #536b8c
+    );
+
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.encabezado {
+    max-width: 900px;
+    margin: auto;
+}
+
+.etiqueta {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #d0dceb;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 75px;
+    letter-spacing: 7px;
+    margin: 15px 0;
+}
+
+header p {
+    font-size: 18px;
+    color: #e1e7ef;
+    margin-bottom: 35px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: white;
+    color: #26364a;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #dce5f1;
+    transform: translateY(-3px);
+}
+
+
+
+nav {
+    background-color: #394d63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #bdd8ff;
+}
+
+
+
+.contenedor {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+
+
+.tarjeta {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 28px;
+    border-radius: 15px;
+    box-shadow: 0 7px 24px rgba(0, 0, 0, 0.07);
+    scroll-margin-top: 90px;
+}
+
+.subtitulo {
+    color: #7285a1;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 10px 0 20px;
+    color: #26364a;
+}
+
+h3 {
+    font-size: 18px;
+    color: #394d63;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#historia p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.foto {
+    background-color: #f3f5f8;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.foto img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.foto h3 {
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+}
+
+
+
+.video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #26364a;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+audio {
+    width: 100%;
+    max-width: 550px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+
+
+.enlace {
+    background-color: #f0f4f8;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boton-enlace {
+    display: inline-block;
+    background-color: #394d63;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.boton-enlace:hover {
+    background-color: #26364a;
+    transform: translateY(-2px);
+}
+
+
+
+footer {
+    background-color: #26364a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    color: white;
+    letter-spacing: 2px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #d0d9e7;
+}
+
+.volver {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.volver:hover {
+    color: #bdd8ff;
+}
+
+
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 55px 15px;
+    }
+
+    h1 {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .contenedor {
+        padding: 0 12px;
+    }
+
+    .tarjeta {
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .foto img {
+        height: 230px;
+    }
+}
